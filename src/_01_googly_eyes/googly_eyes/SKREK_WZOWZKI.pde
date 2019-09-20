@@ -5,11 +5,15 @@ void setup(){
     face.resize(width,height);
 }
 void draw(){
- ellipse(250,275,100,100);
+ fill(#FFFFFF);
+  ellipse(250,275,100,100);
  ellipse(450,275,100,100);
- if((mouseX > 295) && (mouseX < 295)){
-   if((mouseY > 135) && (mouseY < 335)){
+ if((mouseX > 215) && (mouseX < 285)){
+   if((mouseY > 225) && (mouseY < 315)){
+    fill(#000000);
      ellipse(mouseX,mouseY,25,25);
+   fill(#1A03FF);
+     ellipse(mouseX+200,mouseY,25,25);
    }
  }
  
